@@ -4,27 +4,39 @@
 <head>
     <title> Jack Times</title>
     <style>
+        :root {
+            --main-color: #489ee3;
+            --default-border: 1px solid var(--main-color);
+        }
+
         body {
             height: 1000vh;
             margin: 50px;
         }
 
-        span {
-            background-color: yellowgreen;
-            padding: 5px;
-            border-radius: 10px;
+        /* 변수를 이용하여 사용도 가능 */
+        p {
+            background-color: var(--main-color);
         }
 
-        input::placeholder {
-            color: yellow;
+        /* color 선택은 hexa, rgb를 이용하고 rgba는 a값을 이용해 투명도 조정 가능 */
+        p {
+            background-color: #fcce00;
+        }
+
+        a {
+            color: var(--main-color);
+            border: var(--default-border);
         }
     </style>
 </head>
 
 <body>
-    <form>
-        <input type="text" placeholder="Name" />
-    </form>
+    <p>
+        Lorem ipsum dolor adfasdfasdfasdf
+        adfasdfasdfasdfasdfasdf
+    </p>
+    <a href="https://apple.com">Go to Apple</a>
 </body>
 
 </html>
