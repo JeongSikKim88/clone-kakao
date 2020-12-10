@@ -4,39 +4,27 @@
 <head>
     <title> Jack Times</title>
     <style>
-        :root {
-            --main-color: #489ee3;
-            --default-border: 1px solid var(--main-color);
-        }
-
-        body {
-            height: 1000vh;
-            margin: 50px;
-        }
-
-        /* 변수를 이용하여 사용도 가능 */
-        p {
-            background-color: var(--main-color);
-        }
-
-        /* color 선택은 hexa, rgb를 이용하고 rgba는 a값을 이용해 투명도 조정 가능 */
-        p {
-            background-color: #fcce00;
-        }
-
         a {
-            color: var(--main-color);
-            border: var(--default-border);
+            color: wheat;
+            background-color: tomato;
+            text-decoration: none;
+            padding: 3px 5px;
+            border-radius: 5px;
+            font-size: 55px;
+            /* transition은 root에 있어야 함 */
+            /* 그러나, 요소들은 둘다 있어야 함 */
+            transition: background-color 10s ease-in-out, color 5s ease-in-out;
+        }
+
+        a:hover {
+            color: tomato;
+            background-color: wheat;
         }
     </style>
 </head>
 
 <body>
-    <p>
-        Lorem ipsum dolor adfasdfasdfasdf
-        adfasdfasdfasdfasdfasdf
-    </p>
-    <a href="https://apple.com">Go to Apple</a>
+    <a href="#">Go home</a>
 </body>
 
 </html>
